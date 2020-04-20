@@ -1,5 +1,3 @@
-import db from '../../database_simulation'
-
 /* #########################    MUTATION  ######################### */
 
 /* STORE FILE IMAGE BY ID AND TYPE */

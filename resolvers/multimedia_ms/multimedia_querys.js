@@ -1,4 +1,3 @@
-import db from '../../database_simulation'
 import axios from 'axios';
 
 /* #########################    QUERYS  ######################### */
