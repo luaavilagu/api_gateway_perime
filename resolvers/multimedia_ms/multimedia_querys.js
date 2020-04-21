@@ -16,8 +16,3 @@ export const getFile = async (_, {id}, ctx) => {
 export const getFileRegister = async (_,{id, type}, ctx) => {
     return await axios.get(`http://${ctx.MULTIMEDIA_URL}:${ctx.MULTIMEDIA_PORT}/${ctx.MULTIMEDIA_BASE_ENDPOINT}/${id}/${type}/register`).then(res => res.data)
 }
-
-/* GET ITEM IMAGE BY TYPE AND ID OF TYPE MODEL */
-export const getFileImage = async (_, {id, type}, ctx) => {
-    return await axios.get(`http://${ctx.MULTIMEDIA_URL}:${ctx.MULTIMEDIA_PORT}/${ctx.MULTIMEDIA_BASE_ENDPOINT}/${id}/${type}`).then(res => res.data)
-}

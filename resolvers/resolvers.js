@@ -1,5 +1,5 @@
 // Hardcoded data store
-import {files, getFile, getFileRegister, getFileImage} from './multimedia_ms/multimedia_querys'
+import {files, getFile, getFileRegister} from './multimedia_ms/multimedia_querys'
 import {storeFile, updateFile, deleteFile} from './multimedia_ms/multimedia_mutations'
 
 const resolvers = {
@@ -7,13 +7,12 @@ const resolvers = {
         files,
         getFile,
         getFileRegister,
-        getFileImage
     },
 
     Mutation: {
         storeFile,
         updateFile,
-        deleteFile
+        deleteFile,
     }
 }
 
