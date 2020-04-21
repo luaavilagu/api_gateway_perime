@@ -3,12 +3,15 @@ services:
   api-gateway:
     build: .
     environment:
-      PORT: '3000'
+      PORT: '4000'
       SHOW_URLS: 'true'
 
-      MULTIMEDIA_URL: 'ec2-54-173-77-159.compute-1.amazonaws.com'
-      MULTIMEDIA_PORT: '9000'
-      MULTIMEDIA_BASE_ENDPOINT: 'api/multimedia'
+      # MULTIMEDIA_URL: 'ec2-54-173-77-159.compute-1.amazonaws.com'
+      # MULTIMEDIA_PORT: '9000'
+      # MULTIMEDIA_BASE_ENDPOINT: 'api/multimedia'
+      PUBLICATION_URL: 'publicatons2.centralus.cloudapp.azure.com'
+      PUBLICATION_PORT: '3000'
+      PUBLICATION_BASE_ENDPOINT: 'publications'
 
     ports:
-      - '3000:3000'
+      - '4000:4000'

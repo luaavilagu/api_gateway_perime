@@ -5,4 +5,4 @@ import {context} from '../enviroments/enviroments';
 
 const server = new ApolloServer({ typeDefs, resolvers , context });
 
-server.listen({port:3000}).then(({ url }) => {console.log(`SERVER APIGATEWAY PERIME at: ${url}`);});
+server.listen({port:4000}).then(({ url }) => {console.log(`SERVER APIGATEWAY PERIME at: ${url}`);});
