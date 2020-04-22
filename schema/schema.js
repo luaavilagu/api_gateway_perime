@@ -12,6 +12,21 @@ const schema = gql`
     type Mutation {
         ${multimedia_mutations}
         ${publication_mutations}
+        
+    }
+        
+    
+    input PublicationInput{
+        _id: ID
+        title: String
+        description: String
+        state_publication: Boolean
+        contact_information: String
+        id_image: String
+        stock: String
+        expiration_date: String
+        price: String
+        categories: [String]
     }
 
     ${publication_schema}

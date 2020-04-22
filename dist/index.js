@@ -18,7 +18,7 @@ var server = new ApolloServer({
   context: _enviroments.context
 });
 server.listen({
-  port: 3000
+  port: 4000
 }).then(function (_ref) {
   var url = _ref.url;
   console.log("SERVER APIGATEWAY PERIME at: ".concat(url));

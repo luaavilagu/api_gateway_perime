@@ -1,10 +1,11 @@
 // Hardcoded data store
 import {files, getFile, getFileRegister, getFileImage} from './multimedia_ms/multimedia_querys'
 import {storeFile, updateFile, deleteFile} from './multimedia_ms/multimedia_mutations'
+import axios from 'axios';
 
 //Publications
-import {publications} from './publication_ms/publication_querys'
-import {createPublication} from './publication_ms/publication_mutations'
+import {publications, getPublication} from './publication_ms/publication_querys'
+import {myurl} from './publication_ms/publication_mutations'
 
 const resolvers = {
     Query: {
@@ -12,15 +13,27 @@ const resolvers = {
         getFile,
         getFileRegister,
         getFileImage,
-        publications
+        publications,
+        getPublication
     },
 
     Mutation: {
         storeFile,
         updateFile,
         deleteFile,
-        createPublication
+        createPublication(_, { input }  ){
+            let data = JSON.stringify(input);
+            console.log (data);
+            axios.post(myurl,data, {
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            }).then(res => res.data)
+            
+        }
     }
+
+   
 }
 
 export default resolvers
