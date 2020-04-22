@@ -13,6 +13,10 @@ services:
       BUSQUEDA_URL: '54.159.91.236'
       BUSQUEDA_PORT: '33061'
       BUSQUEDA_BASE_ENDPOINT: ''
+
+      UBICATION_URL: 'ec2-3-81-233-113.compute-1.amazonaws.com'
+      UBICATION_PORT: '5500'
+      UBICATION_BASE_ENDPOINT: 'sa-auth-ms/resources/users'      
             
     ports:
       - '3000:3000'

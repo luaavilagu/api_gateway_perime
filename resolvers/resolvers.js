@@ -5,6 +5,9 @@ import {storeFile, updateFile, deleteFile} from './multimedia_ms/multimedia_muta
 import {categorias, productos, getCategoria, getProducto} from './busqueda_ms/busqueda_querys'
 import {postCategoria, putCategoria, deleteCategoria, postProducto, putProducto, deleteProducto } from './busqueda_ms/busqueda_mutations'
 
+import {allUbication, ubicationById, ubicationByPublication} from './ubication_ms/ubication_querys'
+import {createUbication, updateUbication, deleteUbication} from './ubication_ms/ubication_mutations'
+
 const resolvers = {
     Query: {
         files,
@@ -14,8 +17,11 @@ const resolvers = {
         categorias, 
         productos, 
         getCategoria, 
-        getProducto
+        getProducto,
 
+        allUbication, 
+        ubicationById, 
+        ubicationByPublication
     },
 
     Mutation: {
@@ -28,7 +34,11 @@ const resolvers = {
         deleteCategoria, 
         postProducto, 
         putProducto, 
-        deleteProducto        
+        deleteProducto,
+        
+        createUbication, 
+        updateUbication, 
+        deleteUbication
     }
 }
 
