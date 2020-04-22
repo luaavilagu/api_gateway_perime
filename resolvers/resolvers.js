@@ -8,6 +8,9 @@ import {postCategoria, putCategoria, deleteCategoria, postProducto, putProducto,
 import {allUbication, ubicationById, ubicationByPublication} from './ubication_ms/ubication_querys'
 import {createUbication, updateUbication, deleteUbication} from './ubication_ms/ubication_mutations'
 
+import {getComment, getComments} from './comments_ms/comments_querys'
+import {storeComment,updateComment,deleteComment} from './comments_ms/comments_mutations'
+
 const resolvers = {
     Query: {
         files,
@@ -21,7 +24,10 @@ const resolvers = {
 
         allUbication, 
         ubicationById, 
-        ubicationByPublication
+        ubicationByPublication,
+
+        getComment,
+        getComments
     },
 
     Mutation: {
@@ -38,7 +44,11 @@ const resolvers = {
         
         createUbication, 
         updateUbication, 
-        deleteUbication
+        deleteUbication,
+
+        storeComment,
+        updateComment,
+        deleteComment
     }
 }
 
