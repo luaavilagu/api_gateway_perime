@@ -1,5 +1,6 @@
-/* #########################    MUTATION  ######################### */
 import axios from 'axios';
+/* #########################    MUTATION  ######################### */
+
 /* STORE FILE IMAGE BY ID AND TYPE */
 export const storeFile = async (_, {id, type, file}, ctx) => {
     return await axios.post(`http://${ctx.MULTIMEDIA_URL}:${ctx.MULTIMEDIA_PORT}/${ctx.MULTIMEDIA_BASE_ENDPOINT}/${id}/${type}`, {mediafile:file}).then(res => res.data);
