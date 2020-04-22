@@ -1,8 +1,8 @@
 export const multimedia_schema = `
     type Multimedia {
-        multiable_id: Int
-        multiable_type: String
-        multiable_path: String
+        id_model_media: Int
+        type_model_media: String
+        path_media: String
     }
 `
 
