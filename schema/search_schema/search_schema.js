@@ -1,6 +1,6 @@
 export const search_schema = `
     type Category {
-        id_categoy: ID
+        id_category: ID
         name_category: String
         type_category: String
     }
@@ -10,7 +10,6 @@ export const search_schema = `
         name_product: String
         description_product: String
     }
-    
 `
 
 export const search_querys = `
