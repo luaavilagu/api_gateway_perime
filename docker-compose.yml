@@ -10,5 +10,9 @@ services:
       MULTIMEDIA_PORT: '9000'
       MULTIMEDIA_BASE_ENDPOINT: 'api/multimedia'
 
+      USER_URL: 'ec2-35-168-12-183.compute-1.amazonaws.com'
+      USER_PORT: '5000'
+      USER_BASE_ENDPOINT: 'perime-user-ms/user'
+
     ports:
       - '3000:3000'
