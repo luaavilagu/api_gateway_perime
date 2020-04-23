@@ -16,5 +16,10 @@ export const context = {
     
     /* COMMENTS MICROSERVICE CONNECTIONS VARS */
     COMMENTS_URL: process.env.COMMENTS_URL,
-    COMMENTS_PORT: process.env.COMMENTS_PORT
+    COMMENTS_PORT: process.env.COMMENTS_PORT,
+
+    /* USER MICROSERVICE CONNECTIONS VARS */
+    USER_URL: process.env.USER_URL,
+    USER_PORT: process.env.USER_PORT,
+    USER_BASE_ENDPOINT: process.env.USER_BASE_ENDPOINT 
 }

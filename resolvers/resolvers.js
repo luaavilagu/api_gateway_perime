@@ -11,6 +11,9 @@ import {createUbication, updateUbication, deleteUbication} from './ubication_ms/
 import {getComment, getComments} from './comments_ms/comments_querys'
 import {storeComment,updateComment,deleteComment} from './comments_ms/comments_mutations'
 
+import {users, getUser} from './user_ms/user_querys'
+import {storeUser, updateUser, deleteUser} from './user_ms/user_mutations'
+
 const resolvers = {
     Query: {
         files,
@@ -27,7 +30,10 @@ const resolvers = {
         ubicationByPublication,
 
         getComment,
-        getComments
+        getComments,
+
+        users,
+        getUser
     },
 
     Mutation: {
@@ -48,7 +54,11 @@ const resolvers = {
 
         storeComment,
         updateComment,
-        deleteComment
+        deleteComment,
+
+        storeUser,
+        updateUser,
+        deleteUser
     }
 }
 
