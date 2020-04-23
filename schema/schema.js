@@ -5,6 +5,7 @@ import {ubication_schema, ubication_queries, ubication_mutations} from './ubicat
 import {busqueda_schema, busqueda_querys, busqueda_mutations} from './busqueda_schema/busqueda_schema'
 import {comments_schema,comments_querys,comments_mutations} from './comentarios_schema/comentarios_schema'
 import {user_schema, user_querys, user_mutations} from './user_schema/user_schema'
+import {publication_schema, publication_querys, publication_mutations} from './publication_schema/publication_schema'
 
 const schema = gql`
 
@@ -14,6 +15,7 @@ const schema = gql`
         ${ubication_queries}
         ${comments_querys}
         ${user_querys}
+        ${publication_querys}
     }
 
     type Mutation {
@@ -22,6 +24,7 @@ const schema = gql`
         ${ubication_mutations}
         ${comments_mutations}
         ${user_mutations}
+        ${publication_mutations}
     }
 
     ${multimedia_schema}
@@ -29,6 +32,7 @@ const schema = gql`
     ${ubication_schema}
     ${comments_schema}
     ${user_schema}
+    ${publication_schema}
 `;
 
 export default schema

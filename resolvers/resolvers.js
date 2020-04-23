@@ -14,6 +14,9 @@ import {storeComment,updateComment,deleteComment} from './comments_ms/comments_m
 import {users, getUser} from './user_ms/user_querys'
 import {storeUser, updateUser, deleteUser} from './user_ms/user_mutations'
 
+import {publications, getPublication} from './publication_ms/publication_querys'
+import {createPublication , deletePublication} from './publication_ms/publication_mutations'
+
 const resolvers = {
     Query: {
         files,
@@ -33,7 +36,10 @@ const resolvers = {
         getComments,
 
         users,
-        getUser
+        getUser,
+
+        publications,
+        getPublication
     },
 
     Mutation: {
@@ -58,7 +64,10 @@ const resolvers = {
 
         storeUser,
         updateUser,
-        deleteUser
+        deleteUser,
+
+        createPublication,
+        deletePublication
     }
 }
 

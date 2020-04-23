@@ -25,5 +25,9 @@ services:
       USER_PORT: '5000'
       USER_BASE_ENDPOINT: 'perime-user-ms/user'
             
+      PUBLICATION_URL: 'publicatons2.centralus.cloudapp.azure.com'
+      PUBLICATION_PORT: '3000'
+      PUBLICATION_BASE_ENDPOINT: 'publications'
+      
     ports:
       - '3000:3000'
