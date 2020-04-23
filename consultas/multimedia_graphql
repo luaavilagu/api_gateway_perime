@@ -8,13 +8,13 @@
     path_media
   }
   
-  getFile(id:4){
+  getFile(id:5){
     type_model_media
     id_model_media
     path_media
   }
   
-  getFileRegister(id:1, type:"USER"){
+  getFileRegister(id:2, type:"USER"){
     id_model_media
     type_model_media
     path_media
@@ -33,7 +33,7 @@ mutation ($file: String){
     path_media
   }
   
-  updateFile(id:2, type: "PUBLICATION", file: $file){
+  updateFile(id:5, type: "PUBLICATION", file: $file){
     id_model_media
     type_model_media
     path_media
