@@ -22,6 +22,7 @@ export const publication_querys = `
 // getFileImage(id: ID, type: String): Multimedia
 export const publication_mutations = `
     createPublication( input: PublicationInput): Publication
+    deletePublication( id: ID ): Publication
 `
     // updateFile(id: ID, type: String): Multimedia
     // deleteFile(id: ID, type: String): Multimedia

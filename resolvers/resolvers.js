@@ -5,7 +5,7 @@ import axios from 'axios';
 
 //Publications
 import {publications, getPublication} from './publication_ms/publication_querys'
-import {myurl} from './publication_ms/publication_mutations'
+import {myurl , deletePublication} from './publication_ms/publication_mutations'
 
 const resolvers = {
     Query: {
@@ -21,6 +21,7 @@ const resolvers = {
         storeFile,
         updateFile,
         deleteFile,
+        deletePublication,
         createPublication(_, { input }  ){
             let data = JSON.stringify(input);
             console.log (data);
@@ -28,9 +29,15 @@ const resolvers = {
                 headers: {
                     'Content-Type': 'application/json',
                 }
-            }).then(res => res.data)
-            
-        }
+            }).then((response) => {
+                console.log(response);
+                return response;
+              }, (error) => {
+                console.log(error);
+              });
+               
+        },
+        
     }
 
    
