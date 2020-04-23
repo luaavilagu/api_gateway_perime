@@ -10,11 +10,11 @@ services:
       MULTIMEDIA_PORT: '9000'
       MULTIMEDIA_BASE_ENDPOINT: 'api/multimedia'
 
-      BUSQUEDA_URL: '54.159.91.236'
-      BUSQUEDA_PORT: '33061'
+      BUSQUEDA_URL: '54.243.11.62'
+      BUSQUEDA_PORT: '1859'
       BUSQUEDA_BASE_ENDPOINT: ''
 
-      UBICATION_URL: 'ec2-3-81-233-113.compute-1.amazonaws.com'
+      UBICATION_URL: 'ec2-3-80-175-131.compute-1.amazonaws.com'
       UBICATION_PORT: '5500'
       UBICATION_BASE_ENDPOINT: 'sa-auth-ms/resources/users'      
 
