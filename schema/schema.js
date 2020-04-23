@@ -4,7 +4,6 @@ import {multimedia_schema, multimedia_querys, multimedia_mutations} from './mult
 import {ubication_schema, ubication_queries, ubication_mutations} from './ubication_schema/ubication_schema'
 import {search_schema, search_querys, search_mutations} from './search_schema/search_schema'
 import {comments_schema,comments_querys,comments_mutations} from './comentarios_schema/comentarios_schema'
-import {losprecios_schema,losprecios_querys} from './losprecios_schema/losprecios_schema'
 
 const schema = gql`
 
@@ -13,7 +12,6 @@ const schema = gql`
         ${search_querys}
         ${ubication_queries}
         ${comments_querys}
-	${losprecios_querys}
     }
 
     type Mutation {
@@ -27,7 +25,6 @@ const schema = gql`
     ${search_schema}
     ${ubication_schema}
     ${comments_schema}
-    ${losprecios_schema}
 `;
 
 export default schema

@@ -11,8 +11,6 @@ import {createUbication, updateUbication, deleteUbication} from './ubication_ms/
 import {getComment, getComments} from './comments_ms/comments_querys'
 import {storeComment,updateComment,deleteComment} from './comments_ms/comments_mutations'
 
-import {getProductosLosPrecios } from './losprecios_ms/losprecios_querys'
-
 const resolvers = {
     Query: {
         files,
@@ -29,9 +27,7 @@ const resolvers = {
         ubicationByPublication,
 
         getComment,
-        getComments,
-
-	getProductosLosPrecios
+        getComments
     },
 
     Mutation: {

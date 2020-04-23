@@ -1,11 +1,11 @@
 export const search_schema = `
     type Category {
-        _id: ID
+        id_categoy: ID
         name_category: String
         type_category: String
     }
     type Product{
-        _id: ID
+        id_product: ID
         id_category: Int
         name_product: String
         description_product: String
