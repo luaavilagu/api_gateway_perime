@@ -18,6 +18,7 @@ export const context = {
     COMMENTS_URL: process.env.COMMENTS_URL,
     COMMENTS_PORT: process.env.COMMENTS_PORT,
 
-    /* COMMENTS EXTERNAL CONNECTIONS VARS */
+    /* losprecios EXTERNAL CONNECTIONS VARS */
     LOSPRECIOS_URL: process.env.LOSPRECIOS_URL
+
 }
