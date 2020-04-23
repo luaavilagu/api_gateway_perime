@@ -6,7 +6,7 @@ services:
       PORT: '3000'
       SHOW_URLS: 'true'
 
-      MULTIMEDIA_URL: 'ec2-54-173-77-159.compute-1.amazonaws.com'
+      MULTIMEDIA_URL: 'ec2-54-87-249-126.compute-1.amazonaws.com'
       MULTIMEDIA_PORT: '9000'
       MULTIMEDIA_BASE_ENDPOINT: 'api/multimedia'
 
