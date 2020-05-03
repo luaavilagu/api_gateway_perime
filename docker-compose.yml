@@ -23,6 +23,7 @@ services:
 
       LOSPRECIOS_URL: 'losprecios.co'
       LOSPRECIOS_API: 'uExmJrA_831WXmWr'
+
       
     ports:
       - '3000:3000'
