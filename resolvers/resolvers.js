@@ -11,7 +11,11 @@ import {createUbication, updateUbication, deleteUbication} from './ubication_ms/
 import {getComment, getComments} from './comments_ms/comments_querys'
 import {storeComment,updateComment,deleteComment} from './comments_ms/comments_mutations'
 
+import {users, getUser} from './user_ms/user_querys'
+import {storeUser, updateUser, deleteUser} from './user_ms/user_mutations'
 
+import {publications, getPublication} from './publication_ms/publication_querys'
+import {createPublication , deletePublication} from './publication_ms/publication_mutations'
 
 
 const resolvers = {
@@ -32,7 +36,12 @@ const resolvers = {
         getComment,
         getComments,
 
-	
+        users,
+        getUser,
+
+        publications,
+        getPublication
+
     },
 
     Mutation: {
@@ -54,6 +63,14 @@ const resolvers = {
         storeComment,
         updateComment,
         deleteComment,
+
+        storeUser,
+        updateUser,
+        deleteUser,
+
+        createPublication,
+        deletePublication
+
     }
 }
 

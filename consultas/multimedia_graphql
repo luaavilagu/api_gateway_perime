@@ -1,0 +1,48 @@
+#############  QUERYS  #############
+
+{
+
+  files{
+  	id_model_media
+    type_model_media
+    path_media
+  }
+  
+  getFile(id:5){
+    type_model_media
+    id_model_media
+    path_media
+  }
+  
+  getFileRegister(id:2, type:"USER"){
+    id_model_media
+    type_model_media
+    path_media
+  }
+
+}
+
+
+#############  MUTATIONS  #############
+
+mutation ($file: String){
+  
+  storeFile(id:1, type:"USER", file: $file){
+    id_model_media
+    type_model_media
+    path_media
+  }
+  
+  updateFile(id:5, type: "PUBLICATION", file: $file){
+    id_model_media
+    type_model_media
+    path_media
+  }
+  
+  deleteFile(id:1, type: "USER"){
+    id_model_media
+    type_model_media
+    path_media
+  }
+  
+}
