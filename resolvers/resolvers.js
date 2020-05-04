@@ -2,8 +2,8 @@
 import {files, getFile, getFileRegister} from './multimedia_ms/multimedia_querys'
 import {storeFile, updateFile, deleteFile} from './multimedia_ms/multimedia_mutations'
 
-import {categorias, productos, getCategoria, getProducto} from './busqueda_ms/busqueda_querys'
-import {postCategoria, putCategoria, deleteCategoria, postProducto, putProducto, deleteProducto } from './busqueda_ms/busqueda_mutations'
+import {categorys, products, getCategory, getProduct} from './search_ms/search_querys'
+import {postCategory, putCategory, deleteCategory, postProduct, putProduct, deleteProduct } from './search_ms/search_mutations'
 
 import {allUbication, ubicationById, ubicationByPublication} from './ubication_ms/ubication_querys'
 import {createUbication, updateUbication, deleteUbication} from './ubication_ms/ubication_mutations'
@@ -17,16 +17,17 @@ import {storeUser, updateUser, deleteUser} from './user_ms/user_mutations'
 import {publications, getPublication} from './publication_ms/publication_querys'
 import {createPublication , deletePublication} from './publication_ms/publication_mutations'
 
+
 const resolvers = {
     Query: {
         files,
         getFile,
         getFileRegister,
 
-        categorias, 
-        productos, 
-        getCategoria, 
-        getProducto,
+        categorys, 
+        products, 
+        getCategory, 
+        getProduct,
 
         allUbication, 
         ubicationById, 
@@ -40,6 +41,7 @@ const resolvers = {
 
         publications,
         getPublication
+
     },
 
     Mutation: {
@@ -47,12 +49,12 @@ const resolvers = {
         updateFile,
         deleteFile,
         
-        postCategoria, 
-        putCategoria, 
-        deleteCategoria, 
-        postProducto, 
-        putProducto, 
-        deleteProducto,
+        postCategory, 
+        putCategory, 
+        deleteCategory, 
+        postProduct, 
+        putProduct, 
+        deleteProduct,
         
         createUbication, 
         updateUbication, 
@@ -68,6 +70,7 @@ const resolvers = {
 
         createPublication,
         deletePublication
+
     }
 }
 
