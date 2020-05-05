@@ -1,0 +1,89 @@
+# api_gateway_perime
+api_gateway_perime
+
+
+
+# Microservicio Publicaciones
+
+## Querys Disponibles
+
+- **Solicitar todas las publicaciones:**
+
+```
+{
+  publications{
+    title
+    description
+    state_publication
+    id_image
+  	stock
+    expiration_date
+    price
+    categories
+  }
+}
+```
+
+- **Solicitar una publicación en especifico y obtener solo titulo:**
+
+```
+{
+  getPublication(id: "IdDePublicacion"){
+    title
+  }
+}
+  
+```
+
+## Mutations Disponibles
+
+- **Crear una nueva publicación**
+```
+mutation{
+  createPublication(input:{      
+        title: "Arroz morado",
+        description: "Arroz marca diana ",
+        state_publication: true,
+        contact_information: "3132456343",
+        id_image: "2",
+        stock: "3",
+        expiration_date: "2016-05-18T16:00:00Z",
+        price: "20",
+        categories: [
+            "arroz",
+            "diana",
+            "blanco",
+            "grano"
+        ]
+    
+  }){
+    title
+  }
+}
+  
+```
+
+- **Eliminar una publicación con el ID**
+
+```
+deletePublication(id: "IdDePublicacion"){
+    title
+}
+
+```
+
+- **Editar una publicación con el ID**
+
+```
+mutation{
+  updatePublication(
+    id:"5eb0f9d3c0c12f0012a0b7fc",
+    input:{
+      title: "test 2:10 am con "
+    }
+  ){
+    title
+    description
+  }
+}
+```

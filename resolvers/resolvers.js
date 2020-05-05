@@ -1,6 +1,9 @@
 // Hardcoded data store
 import {files, getFile, getFileRegister} from './multimedia_ms/multimedia_querys'
 import {storeFile, updateFile, deleteFile} from './multimedia_ms/multimedia_mutations'
+import axios from 'axios';
+
+//Publications
 
 import {categorys, products, getCategory, getProduct} from './search_ms/search_querys'
 import {postCategory, putCategory, deleteCategory, postProduct, putProduct, deleteProduct } from './search_ms/search_mutations'
@@ -15,7 +18,7 @@ import {users, getUser} from './user_ms/user_querys'
 import {storeUser, updateUser, deleteUser} from './user_ms/user_mutations'
 
 import {publications, getPublication} from './publication_ms/publication_querys'
-import {createPublication , deletePublication} from './publication_ms/publication_mutations'
+import { updatePublication, createPublication, deletePublication} from './publication_ms/publication_mutations'
 
 
 const resolvers = {
@@ -23,6 +26,7 @@ const resolvers = {
         files,
         getFile,
         getFileRegister,
+
 
         categorys, 
         products, 
@@ -48,6 +52,7 @@ const resolvers = {
         storeFile,
         updateFile,
         deleteFile,
+
         
         postCategory, 
         putCategory, 
@@ -68,8 +73,9 @@ const resolvers = {
         updateUser,
         deleteUser,
 
+        deletePublication,
         createPublication,
-        deletePublication
+        updatePublication 
 
     }
 }

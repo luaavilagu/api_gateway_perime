@@ -1,5 +1,6 @@
 import { gql } from "apollo-server";
 
+
 import {multimedia_schema, multimedia_querys, multimedia_mutations} from './multimedia_schema/multimedia_schema'
 import {ubication_schema, ubication_queries, ubication_mutations} from './ubication_schema/ubication_schema'
 import {search_schema, search_querys, search_mutations} from './search_schema/search_schema'
@@ -23,9 +24,9 @@ const schema = gql`
         ${search_mutations}
         ${ubication_mutations}
         ${comments_mutations}
-        ${user_mutations}
+        ${user_mutations}  
         ${publication_mutations}
-    }
+    }        
 
     ${multimedia_schema}
     ${search_schema}
