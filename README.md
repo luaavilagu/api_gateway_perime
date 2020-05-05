@@ -75,7 +75,7 @@ mutation {
     description
     state_publication
     id_image
-  	stock
+    stock
     expiration_date
     price
     categories
