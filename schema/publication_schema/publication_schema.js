@@ -1,4 +1,5 @@
 export const publication_schema = `
+
     input PublicationInput{
         _id: ID
         title: String
@@ -11,7 +12,7 @@ export const publication_schema = `
         price: String
         categories: [String]
     }
-    
+
     type Publication {
         _id: ID
         title: String
@@ -23,6 +24,7 @@ export const publication_schema = `
         expiration_date: String
         price: String
         categories: [String]
+
     },
 
 `
