@@ -147,3 +147,71 @@ mutation{
   }
 }
 ```
+
+# Microservicio Busqueda
+
+## Querys Disponibles
+
+- **Solicitar todas las categorias:**
+
+```
+{
+  categorys
+ {
+  id_category
+  name_category
+  type_category
+}
+}
+```
+
+- **Solicitar una categoria en especifico y obtener solo su nombre:**
+
+```
+{
+  getCategory(id:1)
+  {
+    id_category
+    name_category
+    type_category
+  }
+}
+  
+```
+
+```
+{
+  categorys
+ {
+  id_category
+  name_category
+  type_category
+}
+}
+```
+- **Solicitar todos los productos:**
+
+```
+{
+  products
+  {
+    id_product
+    id_category
+    name_product
+    description_product
+  }
+}
+```
+- **Solicitar un producto en especifico y obtener solo su nombre:**
+
+```
+{
+  getProduct(id: 2)
+  {
+    name_product
+  }
+}
+```
+
+
+
