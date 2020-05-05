@@ -44,41 +44,41 @@ const resolvers = {
                 values.title = input.title;
               }
           
-              if (req.body.description) {
+              if (input.description) {let data = JSON.stringify(input);
                 values.description = req.body.description;
               }
       
-              if (req.body.state_publication) {
+              if (input.state_publication) {
                   values.state_publication = req.body.state_publication;
               }
       
-              if (req.body.contact_information) {
+              if (input.contact_information) {
                   values.contact_information = req.body.contact_information;
               }
       
-              if (req.body.id_image) {
+              if (input.id_image) {
                   values.id_image = req.body.id_image;
               }
       
-              if (req.body.stock) {
+              if (input.stock) {
                   values.stock = req.body.stock;
               }
       
-              if (req.body.expiration_date) {
+              if (input.expiration_date) {
                   values.expiration_date = req.body.expiration_date;
               }
       
-              if (req.body.price) {
+              if (input.price) {
                   values.price = req.body.price;
               }
       
-              if (req.body.categories) {
+              if (input.categories) {
                   values.categories = req.body.categories;
               }
 
             let data = JSON.stringify(values);
             console.log (data);
-            axios.post(myurl,data, {
+            axios.post(myurl+`${id}`,data, {
                 headers: {
                     'Content-Type': 'application/json',
                 }
