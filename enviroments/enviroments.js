@@ -20,7 +20,7 @@ export const context = {
 
     /* LOSPRECIOS EXTERNAL CONNECTIONS VARS */
     LOSPRECIOS_URL: process.env.LOSPRECIOS_URL,
-    LOSPRECIOS_API: process.env.LOSPRECIOS_API
+    LOSPRECIOS_API: process.env.LOSPRECIOS_API,
 
     /* USER MICROSERVICE CONNECTIONS VARS */
     USER_URL: process.env.USER_URL,
