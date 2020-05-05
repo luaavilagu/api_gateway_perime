@@ -1,6 +1,12 @@
 # api_gateway_perime
-api_gateway_perime
+Esta API Gateway corre sobre Docker y con tecnología de GraphQL 
 
+## Deploy 
+Para desplegar esta aplicación en docker use :
+
+```
+sudo docker-compose up --build
+```
 
 
 # Microservicio Publicaciones
