@@ -8,6 +8,59 @@ Para desplegar esta aplicación en docker use :
 sudo docker-compose up --build
 ```
 
+# Microservicio de Multimedia
+
+## QUERYS
+
+```
+{
+
+  files{
+  	id_model_media
+    type_model_media
+    path_media
+  }
+  
+  getFile(id:5){
+    type_model_media
+    id_model_media
+    path_media
+  }
+  
+  getFileRegister(id:2, type:"USER"){
+    id_model_media
+    type_model_media
+    path_media
+  }
+
+}
+```
+## MUTATIONS
+
+```
+mutation ($file: String){
+  
+  storeFile(id:1, type:"USER", file: $file){
+    id_model_media
+    type_model_media
+    path_media
+  }
+}
+mutation ($file: String){
+  updateFile(id:5, type: "PUBLICATION", file: $file){
+    id_model_media
+    type_model_media
+    path_media
+  }
+}
+mutation {
+  deleteFile(id:1, type: "USER"){
+    id_model_media
+    type_model_media
+    path_media
+  }
+}
+```
 
 # Microservicio Publicaciones
 
@@ -34,7 +87,7 @@ sudo docker-compose up --build
 
 ```
 {
-  getPublication(id: "IdDePublicacion"){
+  getPublication(id: "5eb0b8022727be001995a06d"){
     title
   }
 }
@@ -72,7 +125,7 @@ mutation{
 - **Eliminar una publicación con el ID**
 
 ```
-deletePublication(id: "IdDePublicacion"){
+deletePublication(id: "5eb0b8022727be001995a06d"){
     title
 }
 
@@ -87,7 +140,8 @@ mutation{
     input:{
       title: "test 2:10 am con "
     }
-  ){
+  )
+  {
     title
     description
   }
