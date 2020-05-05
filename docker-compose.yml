@@ -3,15 +3,15 @@ services:
   api-gateway:
     build: .
     environment:
-      PORT: '4000'
+      PORT: '3000'
       SHOW_URLS: 'true'
 
       # MULTIMEDIA_URL: 'ec2-54-173-77-159.compute-1.amazonaws.com'
       # MULTIMEDIA_PORT: '9000'
       # MULTIMEDIA_BASE_ENDPOINT: 'api/multimedia'
-      PUBLICATION_URL: '168.61.150.50'
+      PUBLICATION_URL: '35.202.88.71'
       PUBLICATION_PORT: '3000'
       PUBLICATION_BASE_ENDPOINT: 'publications'
 
     ports:
-      - '4000:4000'
+      - '3000:3000'
