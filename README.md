@@ -68,3 +68,19 @@ getPublication(id: "IdDePublicacion"){
 }
 
 ```
+
+- **Editar una publicación con el ID**
+
+```
+mutation{
+  updatePublication(
+    id:"5eb0f9d3c0c12f0012a0b7fc",
+    input:{
+      title: "test 2:10 am con "
+    }
+  ){
+    title
+    description
+  }
+}
+```
