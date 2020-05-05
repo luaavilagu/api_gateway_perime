@@ -27,16 +27,19 @@ api_gateway_perime
 - **Solicitar una publicación en especifico y obtener solo titulo:**
 
 ```
+{
   getPublication(id: "IdDePublicacion"){
     title
   }
+}
+  
 ```
 
 ## Mutations Disponibles
 
 - **Crear una nueva publicación**
 ```
-  mutation{
+mutation{
   createPublication(input:{      
         title: "Arroz morado",
         description: "Arroz marca diana ",
@@ -63,7 +66,7 @@ api_gateway_perime
 - **Eliminar una publicación con el ID**
 
 ```
-getPublication(id: "IdDePublicacion"){
+deletePublication(id: "IdDePublicacion"){
     title
 }
 

@@ -4,8 +4,6 @@ import {storeFile, updateFile, deleteFile} from './multimedia_ms/multimedia_muta
 import axios from 'axios';
 
 //Publications
-import {publications, getPublication} from './publication_ms/publication_querys'
-import { updatePublication, createPublication, deletePublication} from './publication_ms/publication_mutations'
 
 import {categorys, products, getCategory, getProduct} from './search_ms/search_querys'
 import {postCategory, putCategory, deleteCategory, postProduct, putProduct, deleteProduct } from './search_ms/search_mutations'
@@ -20,7 +18,7 @@ import {users, getUser} from './user_ms/user_querys'
 import {storeUser, updateUser, deleteUser} from './user_ms/user_mutations'
 
 import {publications, getPublication} from './publication_ms/publication_querys'
-import {createPublication , deletePublication} from './publication_ms/publication_mutations'
+import { updatePublication, createPublication, deletePublication} from './publication_ms/publication_mutations'
 
 
 const resolvers = {
