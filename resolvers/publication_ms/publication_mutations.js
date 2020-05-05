@@ -9,8 +9,8 @@ export const myurl = `http://` + process.env['PUBLICATION_URL'] + `:` + process.
 
 
 /* UPDATE FILE IMAGE BY ID AND TYPE */
-// export const updateFile = async (_, {id, type}, ctx) => {
-//     return await axios.put(`http://${ctx.PUBLICATION_URL}:${ctx.PUBLICATION_PORT}/${ctx.PUBLICATION_BASE_ENDPOINT}/${id}/${type}`).then(res => res.data)
+// export const updatePublication = async (_, {id, type}, ctx) => {
+//     return await axios.put(`http://${ctx.PUBLICATION_URL}:${ctx.PUBLICATION_PORT}/${ctx.PUBLICATION_BASE_ENDPOINT}/${id}`).then(res => res.data)
 // }
 
 // /* DELETE PUBLICATION */
