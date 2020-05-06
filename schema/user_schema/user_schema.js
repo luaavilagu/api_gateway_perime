@@ -19,7 +19,7 @@ export const user_schema = `
 
 export const user_querys = `
     users: [User]!
-    getUser(id: ID): User!
+    getUser(email: String): User!
 `
 
 export const user_mutations = `

@@ -28,6 +28,7 @@ export const context = {
     USER_URL: process.env.USER_URL,
     USER_PORT: process.env.USER_PORT,
     USER_BASE_ENDPOINT: process.env.USER_BASE_ENDPOINT,
+    LOGIN_BASE_ENDPOINT: process.env.LOGIN_BASE_ENDPOINT,
 
     /* PUBLICATION MICROSERVICE CONNECTIONS VARS */
     PUBLICATION_URL: process.env.PUBLICATION_URL,
