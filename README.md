@@ -213,5 +213,102 @@ mutation{
 }
 ```
 
+# Microservicio Usuario
+
+## Querys Disponibles
+
+- **Solicitar todos los usuarios con todos sus atributos:**
+
+```
+{
+  users{
+    id_user,
+    username_user,
+    passhash_user
+    address_user,
+    cellphone_user,
+    email_user
+  }
+}
+```
+
+- **Solicitar el usuario con id igual a 1 con todos sus atributos:**
+
+```
+{
+  getUser(id: 1){
+    username_user,
+    passhash_user,
+    address_user,
+    cellphone_user,
+    email_user
+  }
+}
+  
+```
+
+## Mutations Disponibles
+
+- **Crear un nuevo usuario**
+```
+mutation{
+  storeUser(input:{      
+    username_user: "exampleuser",
+    passhash_user: "examplepassword",
+    address_user: "Cra 102 # 80 - 51",
+    cellphone_user: "3200000000",
+    email_user: "exampleuser@examplec.com"    
+  })
+  {
+    id_user,
+    username_user,
+    passhash_user,
+    address_user,
+    cellphone_user,
+    email_user
+  }
+}
+  
+```
+
+- **Eliminar un usuario con el ID igual a 1 y traer todos sus atributos**
+
+```
+mutation{
+  deleteUser(id: 1    
+  })
+  {
+    id_user,
+    username_user,
+    passhash_user,
+    address_user,
+    cellphone_user,
+    email_user
+  }
+}
+
+```
+
+- **Editar un usuario con el ID igual a 1 y traer todos sus atributos**
+
+```
+mutation{
+  updateUser(id: 1, input:{      
+    username_user: "updateuser",
+    passhash_user: "updatepassword",
+    address_user: "Cll. 102 # 80 - 51",
+    cellphone_user: "3200000001",
+    email_user: "updateuser@examplec.com"    
+  })
+  {
+    id_user,
+    username_user,
+    passhash_user,
+    address_user,
+    cellphone_user,
+    email_user
+  }
+}
+```
 
 
